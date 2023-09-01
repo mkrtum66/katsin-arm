@@ -6,10 +6,10 @@ import HomePage from './pages/homePage';
 import Header from './components/header';
 import Footer from './components/footer';
 import Sidebar from './components/sidebar';
+import Socials from './components/socials';
 
 function App() {
   const [showSideBar, setShowSideBar] = useState(false);
-  console.log(showSideBar);
 
   return (
     <div className="App">
@@ -18,6 +18,7 @@ function App() {
       <Routes>
         <Route path={'/'} element={<HomePage />} />
       </Routes>
+      <Socials />
       <Footer />
     </div>
   );
