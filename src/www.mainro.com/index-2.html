@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from www.mainro.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Sep 2023 19:25:41 GMT -->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1GX7CCZBWE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-1GX7CCZBWE");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content ="MainRo located in the heart of Hollywood is a true culinary delight. Experience an elegant fusion of Japanese, French and Vietnamese cuisines surrounded by a state of the art ambiance. Come to dine or come to dance as we transition over to a supper club to close out the evening."   />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MainRó | Restaurant & Supper Club</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="pop-up" id="pop-up" hidden >
+        <div class="flyer">
+          <div style="width: 80px; position: relative; margin-left: 310px; margin-top: 10px;">
+            <a href="#">
+              <button onclick="removeFlyer()" type="button" class="book-button" style="background-color: rgba(0, 0, 0, .9); font-size: 10px; margin-top: 10px">X</button>
+            </a>
+          </div>
+          <a
+                  style="margin-top: 300px"
+                  href="https://www.sevenrooms.com/reservations/mainro/"
+          >
+            <button type="button" class="menu-button-flyer">BOOK NOW</button>
+          </a>
+        </div>
+      </div>
+      <header tabindex="0">
+        <a href="#welcome"
+          ><img
+            style="width: 100px"
+            src="assets/images/logoSM.png"
+            alt="Mainro logo"
+        /></a>
+        <div class="booknow">
+          <a href="https://www.sevenrooms.com/reservations/mainro/">
+            <button type="button" class="book-button">BOOK NOW</button>
+          </a>
+        </div>
+      </header>
+      <div id="nav-container">
+        <div class="bg"></div>
+        <div class="button" tabindex="0">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </div>
+        <div id="nav-content" tabindex="0">
+          <ul>
+            <li><a href="index-2.html#welcome">WELCOME</a></li>
+            <li><a href="menu.html">FOOD MENU</a></li>
+            <li><a href="drinks.html">DRINK MENU</a></li>
+            <li><a href="index-2.html#food">CUISINE</a></li>
+            <li><a href="index-2.html#beverages">COCKTAILS</a></li>
+            <li><a href="index-2.html#venue">VENUE</a></li>
+            <li>
+              <a href="https://www.sevenrooms.com/reservations/mainro/"
+                >BOOK A TABLE</a
+              >
+            </li>
+            <li><a href="index-2.html#contact">Contact</a></li>
+            <!-- <li class="small">
+              <a href="https://www.facebook.com/mainro.la">Facebook</a><a href="https://www.instagram.com/mainro.la/?hl=en">Instagram</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+
+      <video id="background-video" autoplay loop muted playsinline>
+        <source src="assets/videos/welcomevid720p.mp4" type="video/mp4" />
+      </video>
+      <main>
+        <div class="welcome" id="welcome">
+          <div style="margin-top: 125px">
+            <img
+              class="fade"
+              style="margin-top: 20px"
+              src="assets/images/logo.png"
+              alt="Mainro logo"
+            />
+            <a
+              style="margin-top: 300px"
+              href="https://www.sevenrooms.com/reservations/mainro/"
+            >
+              <button type="button" class="menu-button-big">BOOK NOW</button>
+            </a>
+          </div>
+        </div>
+        <div class="scroll-down"></div>
+        <a href="#food">
+          <button type="button" class="scroll-down-button"></button>
+        </a>
+      </main>
+      <!-- <main>
+        <div class="gastronomy">
+          <div style="margin-top: 30vh;">
+            <h1>THE GASTRONOMY</h1>
+            <div style="padding: 0 5%;">
+              <p>
+                “MainRo’s culinary concept takes a modern approach with
+                locally-sourced ingredients and imported premium meats blending
+                bold French, Japanese and Vietnamese flavors that will fulfill
+                the senses with arousing fragrances and crave-worthy fare.”
+              </p>
+            </div>
+            <p style="font-size: 0.7em; font-style: normal; margin-top: 5px">
+              /Forbes
+            </p>
+          </div>
+        </div>
+      </main> -->
+
+      <main id="food" style="margin-top: 100px; margin-bottom: 200px">
+        <h1 class="section__label">CUISINE</h1>
+        <section aria-label="drinks">
+          <div class="carousel" data-carousel>
+            <div class="gradient"></div>
+            <button class="carousel-button prev" data-carousel-button="prev">
+              &#x276E;
+            </button>
+            <button class="carousel-button next" data-carousel-button="next">
+              &#x276F;
+            </button>
+
+            <button
+              onclick="location.href='menu.html'"
+              type="button"
+              class="menu-button"
+            >
+              MENU
+            </button>
+            <ul data-slides>
+              <!-- <li class="slide" data-active>
+                <h1 class="menuItemTitle">CEDAR WOOD SALMON</h1>
+                <img src="assets/images/food1.jpg" alt="coctail5" />
+              </li> -->
+
+              <li class="slide" data-active="">
+                <!-- <h1 class="menuItemTitle">LEMONGRASS SOUP</h1> -->
+                <img
+                  src="assets/images/food5.jpg"
+                  alt="Mainro food Miso Soup"
+                  style="object-fit: cover"
+                />
+              </li>
+
+              <li class="slide">
+                <!-- <h1 class="menuItemTitle">CEDAR WOOD SALMON</h1> -->
+                <img
+                  src="assets/images/food7.jpg"
+                  alt="Mainro cocktail"
+                  style="object-fit: cover"
+                />
+              </li>
+
+              <li class="slide">
+                <!-- <h1 class="menuItemTitle">MISO SOUP</h1> -->
+                <img
+                  src="assets/images/food3.jpg"
+                  alt="Mainro food"
+                  style="object-fit: cover"
+                />
+              </li>
+
+              <li class="slide">
+                <img
+                  src="assets/images/food12.jpg"
+                  alt="Mainro food"
+                  style="object-fit: cover"
+                />
+              </li>
+
+              <li class="slide">
+                <img
+                  src="assets/images/food15.jpg"
+                  alt="Mainro food"
+                  style="object-fit: cover"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="assets/images/food16.jpg"
+                  alt="Mainro food"
+                  style="object-fit: cover"
+                />
+              </li>
+
+              <li class="slide">
+                <img
+                  src="assets/images/food19.jpg"
+                  alt="Mainro food"
+                  style="object-fit: cover"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="assets/images/food20.jpg"
+                  alt="Mainro food"
+                  style="object-fit: cover"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="assets/images/food22.jpg"
+                  alt="Mainro food"
+                  style="object-fit: cover"
+                />
+              </li>
+              <li class="slide">
+                <img
+                  src="assets/images/food23.jpg"
+                  alt="Mainro food"
+                  style="object-fit: cover"
+                />
+              </li>
+
+              <li class="slide">
+                <img
+                  src="assets/images/food25.jpg"
+                  alt="Mainro food"
+                  style="object-fit: cover"
+                />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <main>
+        <div class="gastronomy2">
+          <div style="margin-top: 30vh">
+            <h1>THE PRESENTATION</h1>
+            <div style="padding: 0 5% 0 5%">
+              <p>
+                “The food follows the magic of the venue and is defined by a
+                simple, yet sophisticated presentation. We put time and effort
+                into how our dilectible dishes are presented, so not only do our
+                guests have a memorable experience with the venue but the
+                culinary journey during their visit.”
+              </p>
+            </div>
+            <p style="font-size: 0.7em; font-style: normal; margin-top: 5px">
+              /Romain Zago
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <main id="beverages" style="text-align: center">
+        <h1 class="section__label">COCKTAILS</h1>
+        <section aria-label="drinks">
+          <div class="carousel" data-carousel>
+            <div class="gradient"></div>
+            <button class="carousel-button prev" data-carousel-button="prev">
+              &#x276E;
+            </button>
+            <button class="carousel-button next" data-carousel-button="next">
+              &#x276F;
+            </button>
+
+            <button
+              onclick="location.href='drinks.html#cocktails'"
+              type="button"
+              class="menu-button"
+            >
+              COCKTAILS
+            </button>
+            <ul data-slides>
+              <li class="slide" data-active>
+                <img src="assets/images/coct7.jpg" alt="Mainro cocktail" />
+              </li>
+              <li class="slide">
+                <img src="assets/images/coct8.jpg" alt="Mainro cocktail" />
+              </li>
+              <li class="slide">
+                <img src="assets/images/coct9.jpg" alt="Mainro cocktail" />
+              </li>
+              <li class="slide">
+                <img src="assets/images/coct10.jpg" alt="Mainro cocktail" />
+              </li>
+              <li class="slide">
+                <img src="assets/images/coct11.jpg" alt="Mainro cocktail" />
+              </li>
+              <li class="slide">
+                <img src="assets/images/coct12.jpg" alt="Mainro cocktail" />
+              </li>
+              <!-- <li class="slide">
+                <h1 class="menuItemTitle">DANCE ALL NIGHT</h1>
+                <img src="assets/images/cockt1.JPEG" alt="coctail5" />
+              </li>
+
+              <li class="slide">
+                <h1 class="menuItemTitle">HOLLYWOOD HEAT</h1>
+                <img src="assets/images/cockt2.JPEG" alt="coctail1" />
+              </li>
+              <li class="slide">
+                <h1 class="menuItemTitle">SHOW STOPPER</h1>
+                <img src="assets/images/cockt3.JPEG" alt="coctail2" />
+              </li> -->
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <div class="divider__img">
+        <div class="gradient"></div>
+        <div style="bottom: 0px" id="venue"></div>
+      </div>
+
+      <main style="text-align: center">
+        <h1 class="section__label" style="margin-bottom: 20px; margin-top: 0px">
+          THE VENUE
+        </h1>
+        <section aria-label="venu">
+          <div class="carousel" data-carousel>
+            <div class="gradient"></div>
+            <button class="carousel-button prev" data-carousel-button="prev">
+              &#x276E;
+            </button>
+            <button class="carousel-button next" data-carousel-button="next">
+              &#x276F;
+            </button>
+            <a
+              style="margin-top: 300px"
+              href="https://www.sevenrooms.com/reservations/mainro/"
+            >
+              <button type="button" class="menu-button">BOOK A TABLE</button>
+            </a>
+            <ul data-slides>
+              <li class="slide" data-active>
+                <img src="assets/images/venu2.jpg" alt="Mainro venue" />
+              </li>
+              <li class="slide">
+                <img src="assets/images/venu6.jpg" alt="Mainro venue" />
+              </li>
+              <li class="slide">
+                <img src="assets/images/venu5.jpg" alt="Mainro venue" />
+              </li>
+              <li class="slide">
+                <img src="assets/images/venu10.jpg" alt="Mainro venue" />
+              </li>
+
+              <li class="slide">
+                <img src="assets/images/venu12.jpg" alt="Mainro venue" />
+              </li>
+              <li class="slide">
+                <img src="assets/images/venu13.jpg" alt="Mainro venue" />
+              </li>
+              <li class="slide">
+                <img src="assets/images/venu14.jpg" alt="Mainro venue" />
+              </li>
+              <li class="slide">
+                <img src="assets/images/venu15.jpg" alt="Mainro venue" />
+              </li>
+              <li class="slide">
+                <img src="assets/images/venu16.jpg" alt="Mainro venue" />
+              </li>
+              <li class="slide">
+                <img src="assets/images/venu17.jpg" alt="Mainro venue" />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <div class="divider__img2">
+        <div class="gradient"></div>
+      </div>
+
+      <main style="size: 10vh">
+        <div class="contact" id="contact">
+          <div style="margin-top: 0vh">
+            <h1 class="section__label" style="font-size: 1em">CONTACT US!</h1>
+
+            <p style="font-style: normal; margin-top: 20px">
+              <a href="mailto:reservations@mainro.com"
+                >reservations@mainro.com</a
+              ><br />Call or text: +1 (323) 378 6778 <br />
+              WhatsApp: +1 (310) 746 8392<br/><br/>
+              Reservation office hours:<br/>7 days a week from 9:00 am - 6:00 pm
+            </p>
+            <div
+              style="
+                display: flex;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+              "
+            >
+              <a href="https://www.instagram.com/mainro.la/?hl=en">
+                <img
+                  style="width: 50px; height: 50px; margin-right: 20px"
+                  src="assets/images/ig.png"
+                  alt="Instagram logo"
+                />
+              </a>
+              <a href="https://www.facebook.com/mainro.la">
+                <img
+                  style="width: 50px; height: 50px; margin-right: 20px"
+                  src="assets/images/fb.png"
+                  alt="facebook logo"
+                />
+              </a>
+              <a href="#">
+                <img
+                  style="width: 50px; height: 50px; margin-right: 20px"
+                  src="assets/images/twtr.png"
+                  alt="twitter logo"
+                />
+              </a>
+              <a href="#">
+                <img
+                  style="width: 50px; height: 50px"
+                  src="assets/images/tiktok.png"
+                  alt="tiktok logo"
+                />
+              </a>
+            </div>
+            <p style="margin-top: 125px; font-style: normal">
+              Wed:&nbsp;&nbsp; 6:30PM - 1:00AM<br />
+              Thu:&nbsp;&nbsp; 6:30PM - 1:00AM<br />
+              Fri:&nbsp;&nbsp;&nbsp; 6:30PM - 2:00AM<br />
+              Sat:&nbsp;&nbsp; 6:30PM - 2:00AM
+            </p>
+            <p style="margin-top: 25px">
+              6350 Hollywood Blvd,<br />Los Angeles, CA 90028
+            </p>
+            <a
+              style="color: #e4ba56; font-size: 1.2em"
+              href="https://maps.apple.com/?address=6350%20Hollywood%20Blvd,%20Los%20Angeles,%20CA%20%2090028,%20United%20States&amp;auid=16312677461478774168&amp;ll=34.101402,-118.328403&amp;lsp=9902&amp;q=MainRo&amp;_ext=CjIKBQgEEOIBCgQIBRADCgQIBhARCgQIChAACgQIUhACCgQIVRAPCgQIWRACCgUIpAEQARImKUM7AgRpDEFAMdxpqipclV3AOcEQKGCPDUFAQVCMSGyqlF3AUAQ%3D"
+              ><img
+                style="width: 15px"
+                src="assets/images/pinpoint.png"
+                alt="pinpoint"
+              />
+              &nbsp;&nbsp;Get directions
+            </a>
+
+            <p
+              style="
+                bottom: 60px;
+                font-weight: 300;
+                font-size: 0.8em;
+                cursor: pointer;
+                margin-top: 50px;
+              "
+            >
+              © Copyright MainRo LLC all rights reserved
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <div class="footer">
+        <p>
+          <a href="mailto:reservations@mainro.com">reservations@mainro.com</a>
+          &ensp; +1 (323) 378 6778
+        </p>
+      </div>
+      <div class="socials">
+        <a href="https://www.facebook.com/mainro.la">
+          <img
+            style="width: 30px"
+            src="assets/images/fb.png"
+            alt="Facebook logo"
+          />
+        </a>
+        <a href="#">
+          <img
+            style="width: 30px; margin-left: 10px"
+            src="assets/images/twtr.png"
+            alt="twitter logo"
+          />
+        </a>
+        <a href="#">
+          <img
+            style="width: 30px; margin-left: 10px"
+            src="assets/images/tiktok.png"
+            alt="tiktok logo"
+          />
+        </a>
+        <a href="https://www.instagram.com/mainro.la/?hl=en">
+          <img
+            style="width: 30px; margin-left: 10px"
+            src="assets/images/ig.png"
+            alt="instagram logo"
+          />
+        </a>
+      </div>
+
+      <div style="margin-bottom: 40px" class="socials">
+        <a href="#">
+          <img
+            style="width: 30px"
+            src="assets/images/accss.png"
+            alt="Accessibility"
+          />
+        </a>
+      </div>
+    </div>
+
+    <script>
+      function removeFlyer () {
+        const flyer = document.getElementById('pop-up');
+        flyer.remove();
+      }
+    </script>
+  </body>
+
+<!-- Mirrored from www.mainro.com/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 03 Sep 2023 19:25:41 GMT -->
+</html>
+
