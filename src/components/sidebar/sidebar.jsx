@@ -13,7 +13,7 @@ const Sidebar = ({ showSideBar, setShowSideBar }) => {
       <div className="sidebar-content">
         <ul>
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/'}>Welcome</NavLink>
+            <NavLink to={'/welcome'}>Welcome</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
             <NavLink to={'/food-menu'}>Food Menu</NavLink>
@@ -22,7 +22,19 @@ const Sidebar = ({ showSideBar, setShowSideBar }) => {
             <NavLink to={'/drink-menu'}>Drink Menu</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/contact'}>Contact</NavLink>
+            <NavLink to={'/drink-menu'}>Venue</NavLink>
+          </li>
+          <li onClick={() => handleNavigate()}>
+            <NavLink to={'/drink-menu'}>Events</NavLink>
+          </li>
+          <li onClick={() => handleNavigate()}>
+            <NavLink to={'/drink-menu'}>Gift Cards</NavLink>
+          </li>
+          <li onClick={() => handleNavigate()}>
+            <NavLink to={'/drink-menu'}>Dress Code</NavLink>
+          </li>
+          <li onClick={() => handleNavigate()}>
+            <NavLink to={'/drink-menu'}>Book a Table</NavLink>
           </li>
         </ul>
       </div>

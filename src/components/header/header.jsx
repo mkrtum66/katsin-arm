@@ -36,9 +36,7 @@ const Header = ({ showSideBar, setShowSideBar }) => {
         <span>+47 333 78 901</span>
       </a>
 
-      <Button theme={'white'} onClick={handleClick}>
-        Book Now
-      </Button>
+      <Button onClick={handleClick}>Book Now</Button>
     </header>
   );
 };

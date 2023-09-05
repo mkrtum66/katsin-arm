@@ -1,30 +1,34 @@
 .sidebar{
   position: fixed;
   height: 100vh;
-  width: 100%;
-  //z-index: 10;
+  width: 0;
+  z-index: 10;
+  transition: all .3s;
   .bg{
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 0;
     width: 100%;
-    height: calc(100% - 50px);
+    height: calc(100% - 70px);
     visibility: hidden;
     opacity: 0;
-    transition: 0.3s;
     background: #000;
   }
   .sidebar-content{
     margin-top: 70px;
     padding: 30px 0 90px 0;
     width: 90%;
-    max-width: 300px;
+    max-width: 350px;
     position: absolute;
     top: 0;
     left: 0;
     height: calc(100% - 70px);
-    background: var(--background-red);
-    pointer-events: auto;
+    //background: var(--background-bras);
+    //background: url("../../assets/images/sidebarBg.jpg");
+    //background-attachment: fixed;
+    //background-position: bottom;
+    //background-size: cover;
+    background: var(--background-black);
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     transform: translateX(-100%);
     transition: transform 0.3s;
@@ -45,7 +49,7 @@
         a{
           text-decoration: none;
           display: block;
-          color: var(--color-black);
+          color: var(--color-red);
           transition: all 0.3s;
           &.active{
             font-weight: 700;
@@ -54,14 +58,18 @@
         }
         &:hover{
           a{
-            color: var(--color-white);
+            color: var(--color-black);
             transform: scale(1.1);
           }
         }
       }
     }
+    @media(max-width: 576px){
+      max-width: 300px;
+    }
   }
   &.open{
+    width: 100%;
     .bg{
       visibility: visible;
       opacity: .3;
