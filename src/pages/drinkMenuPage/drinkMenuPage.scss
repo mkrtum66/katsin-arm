@@ -1,0 +1,83 @@
+.drinkMenuPage{
+  padding-top: 90px;
+  padding-bottom: 50px;
+  position: relative;
+  @media(max-width: 991px){
+    padding-top: 70px;
+  }
+  .content{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+      display: inline-block;
+      text-align: center;
+      color: var(--color-red);
+      font-weight: 700;
+      font-size: 18px;
+      margin: 0 auto 30px;
+      position: relative;
+      text-shadow: 1px 1px 1px #000;
+      &:after{
+        content: '';
+        position: absolute;
+        top: 45%;
+        left: -15px;
+        width: 10px;
+        height: 2px;
+        background: var(--background-red);
+      }
+      &:before{
+        content: '';
+        position: absolute;
+        top: 45%;
+        right: -15px;
+        width: 10px;
+        height: 2px;
+        background: var(--background-red);
+      }
+    }
+    .foodList{
+      list-style: none;
+      padding: 0;
+      li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 25px;
+        color: var(--color-white);
+        .foodName{
+          font-weight: 700;
+          font-size: 18px;
+          margin-bottom: 5px;
+          text-shadow: 2px 3px 2px var(--color-red);
+        }
+        .foodDescription{
+          font-size: 16px;
+          margin-bottom: 5px;
+          text-shadow: 1px 1px 1px #000;
+        }
+        .foodPrice{
+          margin: 0;
+          font-size: 18px;
+          font-style: italic;
+          font-weight: 900;
+          color: var(--color-red);
+        }
+      }
+    }
+  }
+  .video-background{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}

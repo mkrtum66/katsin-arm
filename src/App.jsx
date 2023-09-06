@@ -10,19 +10,29 @@ import Socials from './components/socials';
 import FoodMenuPage from './pages/foodMenuPage';
 import DrinkMenuPage from './pages/drinkMenuPage';
 import WelcomePage from './pages/welcomePage';
+import JobsPage from './pages/jobsPage';
+import ScrollToTop from './utils/scrollToTop';
+import PrivacyPolicyPage from './pages/privacyPolicyPage';
+import TermsOfServicesPage from './pages/termsOfServicesPage';
 
 function App() {
   const [showSideBar, setShowSideBar] = useState(false);
+  const [sideRef, setSideRef] = useState();
 
   return (
     <div className="App">
+      <ScrollToTop />
       <Header showSideBar={showSideBar} setShowSideBar={setShowSideBar} />
-      <Sidebar showSideBar={showSideBar} setShowSideBar={setShowSideBar} />
+      <Sidebar showSideBar={showSideBar} setShowSideBar={setShowSideBar} setSideRef={setSideRef} />
       <Routes>
-        <Route path={'/'} element={<HomePage />} />
+        <Route path={'/'} element={<HomePage sideRef={sideRef} />} />
         <Route path={'/welcome'} element={<WelcomePage />} />
         <Route path={'/food-menu'} element={<FoodMenuPage />} />
         <Route path={'/drink-menu'} element={<DrinkMenuPage />} />
+
+        <Route path={'/jobs'} element={<JobsPage />} />
+        <Route path={'/privacy-policy'} element={<PrivacyPolicyPage />} />
+        <Route path={'/terms-of-services'} element={<TermsOfServicesPage />} />
       </Routes>
       <Socials />
       <Footer />

@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './homePage.scss';
 import video from '../../assets/video/video.mp4';
-import CuisineSlider from '../../components/cuisineSlider';
+import Slider from '../../components/slider';
+import { cuisineSlider, venueSlider } from '../../components/slider/mock';
+import { scrollToSection } from '../../utils/scrollToSection';
 
-const HomePage = () => {
+const HomePage = ({ sideRef }) => {
+  useEffect(() => {
+    scrollToSection(sideRef);
+  }, [sideRef]);
+
   return (
     <div className="homePageWrapper">
       <div className="homePage">
@@ -15,7 +21,6 @@ const HomePage = () => {
             <h1>katsin</h1>
             <h1>katsin</h1>
           </div>
-          {/*<h1>katsin</h1>*/}
           <div className="button" onClick={() => console.log('asdasdads')}>
             Book NoW
           </div>
@@ -23,7 +28,22 @@ const HomePage = () => {
       </div>
       <section className="section2">
         <div className="container">
-          <CuisineSlider />
+          <Slider
+            title={'Cuisine'}
+            data={cuisineSlider}
+            buttonValue="menu"
+            onClick={() => console.log('from Cuisine')}
+          />
+        </div>
+      </section>
+      <section id="venue" className="sectionVanue">
+        <div className="container">
+          <Slider
+            title={'Venue'}
+            data={venueSlider}
+            buttonValue="Book a Table"
+            onClick={() => console.log('from Cuisine')}
+          />
         </div>
       </section>
     </div>

@@ -16,6 +16,15 @@ const Header = ({ showSideBar, setShowSideBar }) => {
       '_blank', // <- This is what makes it open in a new window.
     );
   };
+
+  const handleLogoClick = () => {
+    navigate('/');
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <header tabIndex="0" className="header">
       <HamburgerButton isActive={showSideBar} onClick={() => setShowSideBar(!showSideBar)} />
@@ -28,7 +37,7 @@ const Header = ({ showSideBar, setShowSideBar }) => {
         <img src={location} alt="img" />
         <span>515 W Broadway, Glendale, CA 91204</span>
       </a>
-      <div className="logo" onClick={() => navigate('/')}>
+      <div className="logo" onClick={() => handleLogoClick()}>
         <LazyLoadImage src={logo} alt="img" width={'auto'} height={'100%'} effect="opacity" />
       </div>
       <a href="tel:+4733378901" className="phone-link">

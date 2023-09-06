@@ -80,13 +80,13 @@ const Footer = () => {
           <div className="col-md-3">
             <ul className="footer-links">
               <li>
-                <NavLink to={'/'}>Jobs</NavLink>
+                <NavLink to={'/jobs'}>Jobs</NavLink>
               </li>
               <li>
-                <NavLink to={'/'}>Privacy Policy</NavLink>
+                <NavLink to={'/privacy-policy'}>Privacy Policy</NavLink>
               </li>
               <li>
-                <NavLink to={'/'}>Terms of Services</NavLink>
+                <NavLink to={'/terms-of-services'}>Terms of Services</NavLink>
               </li>
             </ul>
           </div>

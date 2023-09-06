@@ -5,14 +5,13 @@ import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
-import './cuisineSlider.scss';
-import { cuisineSlider } from './mock';
+import './slider.scss';
 import Button from '../button';
 
-const CuisineSlider = () => {
+const Slider = ({ title, data, buttonValue, onClick }) => {
   return (
     <div className="cuisineSlider">
-      <p className="sectionLabel">CUISINE</p>
+      <p className="sectionLabel">{title}</p>
       <Swiper
         spaceBetween={30}
         effect={'fade'}
@@ -21,23 +20,29 @@ const CuisineSlider = () => {
         centeredSlides={true}
         navigation={true}
         loop={true}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
       >
-        {cuisineSlider.map(item => {
+        {data.map(item => {
           return (
             <SwiperSlide key={item.id}>
               <img src={item.imgSrc} alt="img" />
             </SwiperSlide>
           );
         })}
-        <Button className="slider-button">Menu</Button>
+        {!!buttonValue?.length ? (
+          <Button className="slider-button" onClick={onClick}>
+            {buttonValue}
+          </Button>
+        ) : (
+          ''
+        )}
         <div className="gradient"></div>
       </Swiper>
     </div>
   );
 };
 
-export default CuisineSlider;
+export default Slider;

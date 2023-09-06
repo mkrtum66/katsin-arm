@@ -6,28 +6,30 @@
   transition: all .3s;
   .bg{
     position: absolute;
-    top: 70px;
+    top: 90px;
     left: 0;
     width: 100%;
-    height: calc(100% - 70px);
+    height: calc(100% - 90px);
     visibility: hidden;
     opacity: 0;
-    background: #000;
+    @media(max-width: 991px){
+      top: 70px;
+      height: calc(100% - 70px);
+    }
   }
   .sidebar-content{
-    margin-top: 70px;
+    margin-top: 90px;
     padding: 30px 0 90px 0;
     width: 90%;
     max-width: 350px;
     position: absolute;
     top: 0;
     left: 0;
-    height: calc(100% - 70px);
-    //background: var(--background-bras);
-    //background: url("../../assets/images/sidebarBg.jpg");
-    //background-attachment: fixed;
-    //background-position: bottom;
-    //background-size: cover;
+    height: calc(100% - 90px);
+    @media(max-width: 991px){
+      margin-top: 70px;
+      height: calc(100% - 70px);
+    }
     background: var(--background-black);
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     transform: translateX(-100%);
@@ -37,6 +39,7 @@
     color: var(--color-black);
     font-weight: 700;
     border-radius: 0% 100% 100% 0% / 100% 11% 89% 0%;
+    border:1px solid var(--background-red);
     ul{
       height: 100%;
       display: flex;
@@ -50,6 +53,7 @@
           text-decoration: none;
           display: block;
           color: var(--color-red);
+          text-shadow: 1px 1px 1px var(--color-bras);
           transition: all 0.3s;
           &.active{
             font-weight: 700;
@@ -58,7 +62,7 @@
         }
         &:hover{
           a{
-            color: var(--color-black);
+            color: var(--color-bras);
             transform: scale(1.1);
           }
         }
