@@ -17,7 +17,7 @@ const FoodMenuPage = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoaded(false);
-    }, 800);
+    }, 500);
   }, []);
 
   return (
@@ -25,7 +25,15 @@ const FoodMenuPage = () => {
       <ScrollToHeader links={foodMenu} setMyRef={setMyRef} />
       {!isLoaded ? (
         <>
-          <video className="video-background" autoPlay muted loop playsInline preload={'auto'}>
+          <video
+            className="video-background"
+            autoPlay
+            muted
+            loop
+            playsInline
+            // preload={'auto'}
+            // onLoadStart={() => console.log('start')}
+          >
             <source src={video} type="video/mp4" />
           </video>
           <div className="container">
