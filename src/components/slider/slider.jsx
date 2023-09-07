@@ -7,6 +7,7 @@ import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import './slider.scss';
 import Button from '../button';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Slider = ({ title, data, buttonValue, onClick }) => {
   return (
@@ -20,15 +21,16 @@ const Slider = ({ title, data, buttonValue, onClick }) => {
         centeredSlides={true}
         navigation={true}
         loop={true}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+        grabCursor={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: true,
+        }}
       >
         {data.map(item => {
           return (
             <SwiperSlide key={item.id}>
-              <img src={item.imgSrc} alt="img" />
+              <LazyLoadImage src={item.imgSrc} alt="img" effect="opacity" />
             </SwiperSlide>
           );
         })}

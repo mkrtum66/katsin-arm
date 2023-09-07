@@ -4,7 +4,7 @@ import { scrollToSection } from '../../utils/scrollToSection';
 import video from '../../assets/video/drink.mp4';
 import { foodMenu } from '../foodMenuPage/mock';
 import ScrollToHeader from '../../components/scrollToHeader';
-import Spinner from 'react-bootstrap/Spinner';
+import Loader from '../../components/loader';
 
 const DrinkMenuPage = () => {
   const [myRef, setMyRef] = useState();
@@ -51,7 +51,7 @@ const DrinkMenuPage = () => {
         </>
       ) : (
         <div className="pt-5 w-100 d-flex justify-content-center">
-          <Spinner animation="border" variant="danger" />
+          <Loader />
         </div>
       )}
     </div>
