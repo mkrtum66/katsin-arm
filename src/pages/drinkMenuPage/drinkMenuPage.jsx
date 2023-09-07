@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './drinkMenuPage.scss';
 import { scrollToSection } from '../../utils/scrollToSection';
-import video from '../../assets/video/smokeD720p.mp4';
+import video from '../../assets/video/smok.mp4';
 import { foodMenu } from '../foodMenuPage/mock';
 import ScrollToHeader from '../../components/scrollToHeader';
 

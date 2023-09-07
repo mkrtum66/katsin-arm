@@ -88,6 +88,9 @@ const Footer = () => {
               <li>
                 <NavLink to={'/terms-of-services'}>Terms of Services</NavLink>
               </li>
+              <li>
+                <NavLink to={'/accessibility'}>Accessibility</NavLink>
+              </li>
             </ul>
           </div>
         </div>

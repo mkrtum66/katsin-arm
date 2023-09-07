@@ -17,7 +17,7 @@ const PrivacyPolicyPage = () => {
             to as "we," "us," or "our"). At Katsin, we are committed to protecting the privacy of
             our website visitors and customers. This Privacy Policy outlines the types of
             information we collect, how we use and safeguard your personal information when you
-            visit our website <a href="">www.katsinusa.com.</a>
+            visit our website <a href="www.katsinusa.com">www.katsinusa.com.</a>
           </p>
           <p>
             By using the Website, you consent to the practices described in this Privacy Policy.

@@ -55,10 +55,6 @@
           color: var(--color-red);
           text-shadow: 1px 1px 1px var(--color-bras);
           transition: all 0.3s;
-          &.active{
-            font-weight: 700;
-            transform: scale(1.1);
-          }
         }
         &:hover{
           a{

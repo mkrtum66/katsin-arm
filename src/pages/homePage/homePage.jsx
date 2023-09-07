@@ -17,10 +17,11 @@ const HomePage = ({ sideRef }) => {
           <source src={video} type="video/mp4" />
         </video>
         <section className="section1">
-          <div className="katsin-animation">
-            <h1>katsin</h1>
-            <h1>katsin</h1>
-          </div>
+          {/*<div className="katsin-animation">*/}
+          {/*  <h1>katsin</h1>*/}
+          {/*  <h1>katsin</h1>*/}
+          {/*</div>*/}
+          <h3 className="animate-charcter"> Katsin</h3>
           <div className="button" onClick={() => console.log('asdasdads')}>
             Book NoW
           </div>

@@ -14,6 +14,7 @@ import JobsPage from './pages/jobsPage';
 import ScrollToTop from './utils/scrollToTop';
 import PrivacyPolicyPage from './pages/privacyPolicyPage';
 import TermsOfServicesPage from './pages/termsOfServicesPage';
+import AccessibilityPage from './pages/accessibilityPage';
 
 function App() {
   const [showSideBar, setShowSideBar] = useState(false);
@@ -33,6 +34,7 @@ function App() {
         <Route path={'/jobs'} element={<JobsPage />} />
         <Route path={'/privacy-policy'} element={<PrivacyPolicyPage />} />
         <Route path={'/terms-of-services'} element={<TermsOfServicesPage />} />
+        <Route path={'/accessibility'} element={<AccessibilityPage />} />
       </Routes>
       <Socials />
       <Footer />
