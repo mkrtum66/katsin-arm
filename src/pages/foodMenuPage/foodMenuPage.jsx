@@ -3,7 +3,7 @@ import './foodMenuPage.scss';
 import ScrollToHeader from '../../components/scrollToHeader';
 import { foodMenu } from './mock';
 import { scrollToSection } from '../../utils/scrollToSection';
-import video from '../../assets/video/smokeD720p.mp4';
+import video from '../../assets/video/steak.mp4';
 import Spinner from 'react-bootstrap/Spinner';
 
 const FoodMenuPage = () => {
@@ -21,12 +21,11 @@ const FoodMenuPage = () => {
   }, []);
 
   return (
-    <div className="foodMenuPage">
+    <div className={`foodMenuPage ${isLoaded ? 'bg' : ''}`}>
       <ScrollToHeader links={foodMenu} setMyRef={setMyRef} />
       {!isLoaded ? (
         <>
           <video className="video-background" autoPlay muted loop playsInline preload={'auto'}>
-            >
             <source src={video} type="video/mp4" />
           </video>
           <div className="container">

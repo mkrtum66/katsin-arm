@@ -1,0 +1,10 @@
+.vipRoomPage{
+  padding-top: 90px;
+  padding-bottom: 30px;
+  position: relative;
+  background: var(--background-black);
+  @media(max-width: 991px){
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+}

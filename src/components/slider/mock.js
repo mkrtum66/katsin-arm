@@ -9,6 +9,13 @@ import venue2 from '../../assets/images/venue/Venue - 2.jpg';
 import venue3 from '../../assets/images/venue/Venue - 3.jpg';
 import venue4 from '../../assets/images/venue/Venue - 4.jpg';
 
+import vip1 from '../../assets/images/vipRoom/IMG_6195.JPG';
+import vip2 from '../../assets/images/vipRoom/IMG_6196.JPG';
+import vip3 from '../../assets/images/vipRoom/IMG_6197.JPG';
+import vip4 from '../../assets/images/vipRoom/IMG_6198.jpg';
+import vip5 from '../../assets/images/vipRoom/IMG_6199.JPG';
+import vip6 from '../../assets/images/vipRoom/IMG_6201.JPG';
+
 export const cuisineSlider = [
   {
     id: uuid(),
@@ -44,5 +51,32 @@ export const venueSlider = [
   {
     id: uuid(),
     imgSrc: venue4,
+  },
+];
+
+export const vipRoomSlider = [
+  {
+    id: uuid(),
+    imgSrc: vip1,
+  },
+  {
+    id: uuid(),
+    imgSrc: vip2,
+  },
+  {
+    id: uuid(),
+    imgSrc: vip3,
+  },
+  {
+    id: uuid(),
+    imgSrc: vip4,
+  },
+  {
+    id: uuid(),
+    imgSrc: vip5,
+  },
+  {
+    id: uuid(),
+    imgSrc: vip6,
   },
 ];

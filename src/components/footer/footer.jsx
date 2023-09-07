@@ -42,9 +42,9 @@ const Footer = () => {
                   </span>
                 </div>
               </a>
-              <a href="tel:+4733378901" className="phone-link">
+              <a href="tel:+18183311000" className="phone-link">
                 <img src={phone} alt="img" />
-                <span>+47 333 78 901</span>
+                <span>+1 (818)-331-1000</span>
               </a>
             </div>
           </div>

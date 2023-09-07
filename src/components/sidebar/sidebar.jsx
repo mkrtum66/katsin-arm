@@ -36,16 +36,19 @@ const Sidebar = ({ showSideBar, setShowSideBar, setSideRef }) => {
             <NavLink to={'/'}>Venue</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/drink-menu'}>Events</NavLink>
+            <NavLink to={'/'}>Events</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/drink-menu'}>Gift Cards</NavLink>
+            <NavLink to={'/'}>Gift Cards</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/drink-menu'}>Dress Code</NavLink>
+            <NavLink to={'/'}>Dress Code</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/drink-menu'}>Book a Table</NavLink>
+            <NavLink to={'/'}>Book a Table</NavLink>
+          </li>
+          <li onClick={() => handleNavigate()}>
+            <NavLink to={'/vip'}>VIP Room</NavLink>
           </li>
         </ul>
       </div>

@@ -3,7 +3,7 @@ import './header.scss';
 import HamburgerButton from '../hamburgerButton';
 import Button from '../button';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import logo from '../../assets/logo.jpg';
+import logo from '../../assets/logo-gold.png';
 import location from '../../assets/icons/location.png';
 import phone from '../../assets/icons/call.png';
 import { useNavigate } from 'react-router';
@@ -19,6 +19,7 @@ const Header = ({ showSideBar, setShowSideBar }) => {
 
   const handleLogoClick = () => {
     navigate('/');
+    setShowSideBar(false);
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
@@ -40,9 +41,9 @@ const Header = ({ showSideBar, setShowSideBar }) => {
       <div className="logo" onClick={() => handleLogoClick()}>
         <LazyLoadImage src={logo} alt="img" width={'auto'} height={'100%'} effect="opacity" />
       </div>
-      <a href="tel:+4733378901" className="phone-link">
+      <a href="tel:+18183311000" className="phone-link">
         <img src={phone} alt="img" />
-        <span>+47 333 78 901</span>
+        <span>+1 (818)-331-1000</span>
       </a>
 
       <Button onClick={handleClick}>Book Now</Button>
