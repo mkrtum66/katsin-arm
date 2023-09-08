@@ -36,7 +36,7 @@ const Header = ({ showSideBar, setShowSideBar }) => {
         className="location-link"
       >
         <img src={location} alt="img" />
-        <span>515 W Broadway, Glendale, CA 91204</span>
+        <span>515 W Broadway Unit 111, Glendale, CA 91204</span>
       </a>
       <div className="logo" onClick={() => handleLogoClick()}>
         <LazyLoadImage src={logo} alt="img" width={'auto'} height={'100%'} effect="opacity" />
