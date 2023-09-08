@@ -31,7 +31,7 @@ const FoodMenuPage = () => {
             muted
             loop
             playsInline
-            // preload={'auto'}
+            preload={'metadata'}
             // onLoadStart={() => console.log('start')}
           >
             <source src={video} type="video/mp4" />

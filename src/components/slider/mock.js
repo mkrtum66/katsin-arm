@@ -8,6 +8,8 @@ import venue1 from '../../assets/images/venue/Venue - 1.jpg';
 import venue2 from '../../assets/images/venue/Venue - 2.jpg';
 import venue3 from '../../assets/images/venue/Venue - 3.jpg';
 import venue4 from '../../assets/images/venue/Venue - 4.jpg';
+import venue5 from '../../assets/images/venue/Vanue - 5.JPG';
+import venue6 from '../../assets/images/venue/Vanue - 6.JPG';
 
 import vip1 from '../../assets/images/vipRoom/IMG_6195.JPG';
 import vip2 from '../../assets/images/vipRoom/IMG_6196.JPG';
@@ -51,6 +53,14 @@ export const venueSlider = [
   {
     id: uuid(),
     imgSrc: venue4,
+  },
+  {
+    id: uuid(),
+    imgSrc: venue5,
+  },
+  {
+    id: uuid(),
+    imgSrc: venue6,
   },
 ];
 

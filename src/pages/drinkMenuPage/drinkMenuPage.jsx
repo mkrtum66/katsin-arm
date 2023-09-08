@@ -31,7 +31,7 @@ const DrinkMenuPage = () => {
             muted
             loop
             playsInline
-            // preload={'metadata'}
+            preload={'metadata'}
             // onLoadStart={() => setIsLoaded(true)}
             // onLoadCapture={() => console.log('asdasd')}
           >
