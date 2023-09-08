@@ -1,22 +1,22 @@
 import { v4 as uuid } from 'uuid';
-import slide1 from '../../assets/images/cuisine/1.jpeg';
-import slide2 from '../../assets/images/cuisine/2.jpeg';
-import slide3 from '../../assets/images/cuisine/3.jpeg';
-import slide4 from '../../assets/images/cuisine/4.jpeg';
+import slide1 from '../../assets/images/cuisine/1-min.jpeg';
+import slide2 from '../../assets/images/cuisine/2-min.jpeg';
+import slide3 from '../../assets/images/cuisine/3-min.jpeg';
+import slide4 from '../../assets/images/cuisine/4-min.jpeg';
 
-import venue1 from '../../assets/images/venue/Venue - 1.jpg';
-import venue2 from '../../assets/images/venue/Venue - 2.jpg';
-import venue3 from '../../assets/images/venue/Venue - 3.jpg';
-import venue4 from '../../assets/images/venue/Venue - 4.jpg';
-import venue5 from '../../assets/images/venue/Vanue - 5.JPG';
-import venue6 from '../../assets/images/venue/Vanue - 6.JPG';
+import venue1 from '../../assets/images/venue/Venue - 1-min.jpg';
+import venue2 from '../../assets/images/venue/Venue - 2-min.jpg';
+import venue3 from '../../assets/images/venue/Venue - 3-min.jpg';
+import venue4 from '../../assets/images/venue/Venue - 4-min.jpg';
+import venue5 from '../../assets/images/venue/Vanue - 5-min.JPG';
+import venue6 from '../../assets/images/venue/Vanue - 6-min.JPG';
 
-import vip1 from '../../assets/images/vipRoom/IMG_6195.JPG';
-import vip2 from '../../assets/images/vipRoom/IMG_6196.JPG';
-import vip3 from '../../assets/images/vipRoom/IMG_6197.JPG';
-import vip4 from '../../assets/images/vipRoom/IMG_6198.jpg';
-import vip5 from '../../assets/images/vipRoom/IMG_6199.JPG';
-import vip6 from '../../assets/images/vipRoom/IMG_6201.JPG';
+import vip1 from '../../assets/images/vipRoom/IMG_6195-min.JPG';
+import vip2 from '../../assets/images/vipRoom/IMG_6196-min.JPG';
+import vip3 from '../../assets/images/vipRoom/IMG_6197-min.JPG';
+import vip4 from '../../assets/images/vipRoom/IMG_6198-min.jpg';
+import vip5 from '../../assets/images/vipRoom/IMG_6199-min.JPG';
+import vip6 from '../../assets/images/vipRoom/IMG_6201-min.JPG';
 
 export const cuisineSlider = [
   {

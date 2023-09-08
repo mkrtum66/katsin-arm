@@ -22,6 +22,9 @@ code {
 a{
   text-decoration: none;
 }
+body{
+  background: var(--background-black);
+}
 :root{
   --color-white: #ffffff;
   --color-black: #000000;
