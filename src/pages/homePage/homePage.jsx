@@ -5,6 +5,8 @@ import Slider from '../../components/slider';
 import { cuisineSlider, venueSlider } from '../../components/slider/mock';
 import { scrollToSection } from '../../utils/scrollToSection';
 
+import nkar from '../../assets/images/cocktail.jpg';
+
 const HomePage = ({ sideRef }) => {
   useEffect(() => {
     scrollToSection(sideRef);
@@ -37,6 +39,14 @@ const HomePage = ({ sideRef }) => {
           />
         </div>
       </section>
+      <div className="img-section">
+        <div className="container">
+          <div className="gradient-image">
+            <div className="bg"></div>
+            <img src={nkar} alt="img" className="img-fluid img-gradient" />
+          </div>
+        </div>
+      </div>
       <section id="venue" className="sectionVanue">
         <div className="container">
           <Slider

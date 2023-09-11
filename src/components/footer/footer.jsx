@@ -54,7 +54,7 @@ const Footer = () => {
               <div className="hours">
                 <p>Monday - Sunday</p>
                 <p style={{ height: '24px' }}></p>
-                <p>4:00PM - 0:00AM</p>
+                <p>12:30PM - 0:00AM</p>
               </div>
               <p className="closed m-0">Closed for most major holidays</p>
             </div>
