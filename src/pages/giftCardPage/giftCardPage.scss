@@ -1,0 +1,50 @@
+.giftCardPage{
+  padding-top: 140px;
+  padding-bottom: 50px;
+  position: relative;
+  background-image: url("../../assets/images/jobsBg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  @media(max-width: 991px){
+    padding-top: 120px;
+  }
+  .giftCardContent{
+    max-width: 600px;
+    background-color: #fff;
+    border-color: #e0e0e0;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: var(--color-black);
+    margin: 24px auto 35px;
+    padding: 12px 60px 24px 60px;
+    .required-instruction{
+      color: var(--color-black);
+      display: block;
+      font-family: inherit;
+      font-size: .74rem;
+      font-style: italic;
+      line-height: inherit;
+      margin-bottom: 0;
+      text-align: center;
+    }
+    .page-header{
+      border-bottom: none;
+      padding: 0 0 24px;
+      margin: 30px 0 0 0;
+      text-align: center;
+      color: var(--color-black);
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 2px;
+      text-decoration: initial;
+      text-transform: uppercase;
+      font-variant: inherit;
+    }
+  }
+}

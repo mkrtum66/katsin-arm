@@ -14,4 +14,14 @@
   a{
     color: var(--color-red);
   }
+  .list{
+    margin-top: 10px;
+    list-style-type: lower-alpha;
+    li{
+      margin-bottom: 5px;
+      &:last-child{
+        margin: 0;
+      }
+    }
+  }
 }

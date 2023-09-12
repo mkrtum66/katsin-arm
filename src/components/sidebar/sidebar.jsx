@@ -39,7 +39,7 @@ const Sidebar = ({ showSideBar, setShowSideBar, setSideRef }) => {
             <NavLink to={'/'}>Events</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/'}>Gift Cards</NavLink>
+            <NavLink to={'/gift-card'}>Gift Cards</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
             <NavLink to={'/'}>Dress Code</NavLink>
