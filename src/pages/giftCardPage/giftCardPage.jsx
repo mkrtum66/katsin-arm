@@ -3,7 +3,7 @@ import './giftCardPage.scss';
 
 const GiftCardPage = () => {
   return (
-    <div className="giftCardPage">
+    <div className="giftCardPage pageWrapper">
       <div className="container">
         <div className="giftCardContent">
           <span className="required-instruction">

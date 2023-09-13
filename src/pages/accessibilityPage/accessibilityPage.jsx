@@ -3,7 +3,7 @@ import './accessibilityPage.scss';
 
 const AccessibilityPage = () => {
   return (
-    <div className="accessibilityPage">
+    <div className="accessibilityPage pageWrapper">
       <div className="container">
         <h2 className="fw-bold">Accessibility Statement</h2>
         <br />

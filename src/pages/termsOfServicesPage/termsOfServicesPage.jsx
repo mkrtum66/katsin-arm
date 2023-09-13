@@ -3,7 +3,7 @@ import './termsOfServicesPage.scss';
 
 const TermsOfServicesPage = () => {
   return (
-    <div className="termsOfServicesPage">
+    <div className="termsOfServicesPage pageWrapper">
       <div className="container">
         <h1 className="page-title mb-5">Terms of Service</h1>
         <h2 className="title mb-3">Acceptance of Terms</h2>

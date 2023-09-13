@@ -41,9 +41,9 @@ const Header = ({ showSideBar, setShowSideBar }) => {
       <div className="logo" onClick={() => handleLogoClick()}>
         <LazyLoadImage src={logo} alt="img" width={'auto'} height={'100%'} effect="opacity" />
       </div>
-      <a href="tel:+18183311000" className="phone-link">
+      <a href="tel:+18186393030" className="phone-link">
         <img src={phone} alt="img" />
-        <span>+1 (818)-331-1000</span>
+        <span>+1 (818)-639-3030</span>
       </a>
 
       <Button onClick={handleClick}>Book Now</Button>

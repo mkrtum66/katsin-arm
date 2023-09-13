@@ -76,7 +76,19 @@
         padding-left: 7px;
       }
     }
-
+  }
+  .website{
+    a{
+      img{
+        width: 20px;
+        height: 20px;
+      }
+      p{
+        text-align: left;
+        margin: 0;
+        padding-left: 7px;
+      }
+    }
   }
 
   .title{
@@ -155,6 +167,17 @@
       img{
         margin: 0 auto;
       }
+    }
+  }
+  .site-link{
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    img{
+      width: 30px !important;
+      height: auto;
+      object-fit: contain;
+      margin-left: 100px;
     }
   }
 }

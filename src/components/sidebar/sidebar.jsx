@@ -36,16 +36,16 @@ const Sidebar = ({ showSideBar, setShowSideBar, setSideRef }) => {
             <NavLink to={'/'}>Venue</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/'}>Events</NavLink>
+            <NavLink to={'/events'}>Events</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/gift-card'}>Gift Cards</NavLink>
+            <NavLink to={'https://pos.toasttab.com/'}>Katsin Cards</NavLink>
           </li>
+          {/*<li onClick={() => handleNavigate()}>*/}
+          {/*  <NavLink to={'/'}>Dress Code</NavLink>*/}
+          {/*</li>*/}
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/'}>Dress Code</NavLink>
-          </li>
-          <li onClick={() => handleNavigate()}>
-            <NavLink to={'/vip'}>VIP Room</NavLink>
+            <NavLink to={'/vip'}>Book VIP Room</NavLink>
           </li>
         </ul>
       </div>

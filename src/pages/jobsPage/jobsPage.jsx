@@ -3,7 +3,7 @@ import './jobsPage.scss';
 
 const JobsPage = () => {
   return (
-    <div className="jobsPage">
+    <div className="jobsPage pageWrapper">
       <div className="container">
         <div className="content">
           <h4>Join Katsin,</h4>

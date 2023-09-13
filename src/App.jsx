@@ -17,6 +17,7 @@ import TermsOfServicesPage from './pages/termsOfServicesPage';
 import AccessibilityPage from './pages/accessibilityPage';
 import VipRoomPage from './pages/vipRoomPage';
 import GiftCardPage from './pages/giftCardPage';
+import EventsPage from './pages/eventsPage';
 
 function App() {
   const [showSideBar, setShowSideBar] = useState(false);
@@ -32,12 +33,13 @@ function App() {
         <Route path={'/welcome'} element={<WelcomePage />} />
         <Route path={'/food-menu'} element={<FoodMenuPage />} />
         <Route path={'/drink-menu'} element={<DrinkMenuPage />} />
+        <Route path={'/events'} element={<EventsPage />} />
 
         <Route path={'/jobs'} element={<JobsPage />} />
         <Route path={'/privacy-policy'} element={<PrivacyPolicyPage />} />
         <Route path={'/terms-of-services'} element={<TermsOfServicesPage />} />
         <Route path={'/accessibility'} element={<AccessibilityPage />} />
-        <Route path={'/gift-card'} element={<GiftCardPage />} />
+        <Route path={'/cards'} element={<GiftCardPage />} />
         <Route path={'/vip'} element={<VipRoomPage />} />
       </Routes>
       <Socials />

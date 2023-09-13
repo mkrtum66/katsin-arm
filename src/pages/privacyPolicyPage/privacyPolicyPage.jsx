@@ -6,7 +6,7 @@ import email from '../../assets/icons/email.png';
 
 const PrivacyPolicyPage = () => {
   return (
-    <div className="privacyPolicyPage">
+    <div className="privacyPolicyPage pageWrapper">
       <div className="container">
         <h2>Privacy Policy</h2>
         <p>Last Updated: 09/06/2023</p>

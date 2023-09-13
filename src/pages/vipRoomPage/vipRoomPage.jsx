@@ -2,13 +2,17 @@ import React from 'react';
 import './vipRoomPage.scss';
 import { vipRoomSlider } from '../../components/slider/mock';
 import Slider from '../../components/slider';
+import Button from '../../components/button';
 
 const VipRoomPage = () => {
   return (
     <div className="vipRoomPage">
       <div className="container">
         <div className="info">
-          <h3>Welcome to our Restaurant VIP Room!</h3>
+          <h3>
+            VIP Room reservation Call! <br />
+            <Button onClick={() => window.open('tel:+18186393030', '_self')}>Call</Button>
+          </h3>
           <p className="mb-4">
             At Katsin, we believe in providing an exceptional dining experience that goes above and
             beyond. Our VIP Room is an exclusive haven designed to cater to your every culinary
@@ -25,7 +29,7 @@ const VipRoomPage = () => {
           title={'VIP ROOM'}
           data={vipRoomSlider}
           buttonValue="Call"
-          onClick={() => window.open('tel:+18183311000', '_self')}
+          onClick={() => window.open('tel:+18186393030', '_self')}
         />
       </div>
     </div>

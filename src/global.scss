@@ -36,3 +36,12 @@ body{
   --background-bras: #DAA520;
   --background-red: #9b0e0e;
 }
+
+.pageWrapper{
+  padding-top: 140px;
+  padding-bottom: 50px;
+  position: relative;
+  @media(max-width: 991px){
+    padding-top: 120px;
+  }
+}
