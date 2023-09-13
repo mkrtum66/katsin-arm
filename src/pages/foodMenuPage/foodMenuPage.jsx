@@ -20,6 +20,8 @@ const FoodMenuPage = () => {
     }, 500);
   }, []);
 
+  console.log(foodMenu);
+
   return (
     <div className={`foodMenuPage ${isLoaded ? 'bg' : ''}`}>
       <ScrollToHeader links={foodMenu} setMyRef={setMyRef} />
@@ -39,7 +41,7 @@ const FoodMenuPage = () => {
           <div className="container">
             {foodMenu.map(item => {
               return (
-                <div key={item.id} id={item.title.toUpperCase()} className="content">
+                <div key={item.id} id={item.id} className="content">
                   <h2>{item.title.toUpperCase()}</h2>
                   <ul className="foodList">
                     {item.type.map(food => {

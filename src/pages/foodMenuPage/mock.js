@@ -1,4 +1,5 @@
 import { v4 as uuid } from 'uuid';
+import i18n from '../../i18n';
 
 export const starters = [
   {
@@ -89,7 +90,7 @@ export const lateNight = [
 export const foodMenu = [
   {
     id: uuid(),
-    title: 'STARTERS',
+    title: i18n.t('starters'),
     type: starters,
   },
   {

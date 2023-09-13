@@ -8,7 +8,7 @@ const ScrollToHeader = ({ links, setMyRef }) => {
         <ul>
           {links.map(item => {
             return (
-              <li key={item.id} onClick={() => setMyRef(item.title.toUpperCase())}>
+              <li key={item.id} onClick={() => setMyRef(item.id)}>
                 {item.title.toUpperCase()}
               </li>
             );

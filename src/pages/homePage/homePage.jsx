@@ -6,8 +6,11 @@ import { cuisineSlider, venueSlider } from '../../components/slider/mock';
 import { scrollToSection } from '../../utils/scrollToSection';
 
 import nkar from '../../assets/images/cocktail.jpg';
+import { useTranslation } from 'react-i18next';
 
 const HomePage = ({ sideRef }) => {
+  const { t } = useTranslation();
+
   useEffect(() => {
     scrollToSection(sideRef);
   }, [sideRef]);
@@ -19,13 +22,9 @@ const HomePage = ({ sideRef }) => {
           <source src={video} type="video/mp4" />
         </video>
         <section className="section1">
-          {/*<div className="katsin-animation">*/}
-          {/*  <h1>katsin</h1>*/}
-          {/*  <h1>katsin</h1>*/}
-          {/*</div>*/}
-          <h3 className="animate-charcter"> Katsin</h3>
+          <h3 className="animate-charcter">{t('katsin')}</h3>
           <div className="button" onClick={() => console.log('asdasdads')}>
-            Book NoW
+            {t('book_now')}
           </div>
         </section>
       </div>

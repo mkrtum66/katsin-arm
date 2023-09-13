@@ -7,6 +7,8 @@ import clock from '../../assets/icons/clock.png';
 import mail from '../../assets/icons/email.png';
 import logo from '../../assets/logo-big.png';
 import www from '../../assets/icons/www.png';
+import usFlag from '../../assets/icons/us-flag.svg';
+import armFlag from '../../assets/icons/arm-flag.png';
 import { Form } from 'react-bootstrap';
 import Button from '../button';
 import { NavLink } from 'react-router-dom';
@@ -32,10 +34,7 @@ const Footer = () => {
           <div className="col-md-3 mb-5 mb-md-0">
             <div className="col1">
               <div className="site-link">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
-                  alt="img"
-                />
+                <img src={usFlag} alt="img" />
               </div>
               <a
                 href="https://www.google.com/maps/place/515+W+Broadway,+Glendale,+CA+91204/@34.1469975,-118.2658522,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c059cd1794bf:0xa2e2eb7f04a67441!8m2!3d34.1469975!4d-118.2658522!16s%2Fg%2F11csksbsjl?entry=ttu"
@@ -100,10 +99,7 @@ const Footer = () => {
           <div className="col-md-3">
             <div className="col1">
               <div className="site-link">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Flag_of_Armenia_%28Soviet_colors%29.svg/800px-Flag_of_Armenia_%28Soviet_colors%29.svg.png?20200627191637"
-                  alt="img"
-                />
+                <img src={armFlag} alt="img" />
               </div>
               <a
                 href="https://www.google.com/maps/place/Katsin+Restaurant/@40.179765,44.5099792,19.91z/data=!4m15!1m8!3m7!1s0x406abcfbf7f7bfa7:0x621287d0a9083be3!2s4,+6+Amiryan+St,+Yerevan+0001,+Armenia!3b1!8m2!3d40.1795514!4d44.5102382!16s%2Fg%2F11r63j0y84!3m5!1s0x406abde086cd6025:0xca014a370e8a581!8m2!3d40.1798355!4d44.5107282!16s%2Fg%2F11rmzkfx17?entry=ttu"
