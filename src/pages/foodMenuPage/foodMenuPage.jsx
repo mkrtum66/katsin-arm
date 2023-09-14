@@ -5,10 +5,12 @@ import { foodMenu } from './mock';
 import { scrollToSection } from '../../utils/scrollToSection';
 import video from '../../assets/video/steak-video.mp4';
 import Loader from '../../components/loader';
+import { useTranslation } from 'react-i18next';
 
 const FoodMenuPage = () => {
   const [myRef, setMyRef] = useState();
   const [isLoaded, setIsLoaded] = useState(true);
+  const { t } = useTranslation();
 
   useEffect(() => {
     scrollToSection(myRef);
@@ -19,8 +21,6 @@ const FoodMenuPage = () => {
       setIsLoaded(false);
     }, 500);
   }, []);
-
-  console.log(foodMenu);
 
   return (
     <div className={`foodMenuPage ${isLoaded ? 'bg' : ''}`}>
@@ -42,14 +42,22 @@ const FoodMenuPage = () => {
             {foodMenu.map(item => {
               return (
                 <div key={item.id} id={item.id} className="content">
-                  <h2>{item.title.toUpperCase()}</h2>
+                  <h2>{t(item.title).toUpperCase()}</h2>
                   <ul className="foodList">
                     {item.type.map(food => {
                       return (
                         <li key={food.id}>
-                          <p className="foodName">{food.name.toUpperCase()}</p>
-                          <p className="foodDescription">{food.description}</p>
-                          <p className="foodPrice">{food.price}</p>
+                          {!!food.name.length ? (
+                            <p className="foodName">{food.name.toUpperCase()}</p>
+                          ) : (
+                            ''
+                          )}
+                          {!!food.description.length ? (
+                            <p className="foodDescription">{food.description}</p>
+                          ) : (
+                            ''
+                          )}
+                          {!!food.price.length ? <p className="foodPrice">֏ {food.price}</p> : ''}
                         </li>
                       );
                     })}

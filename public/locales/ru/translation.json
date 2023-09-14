@@ -19,8 +19,19 @@
   "accessibility": "Доступность",
   "sd_welcome": "Добро пожаловать",
   "food_menu": "Меню еды",
+  "lunch_menu": "Меню ланч",
   "drink_menu": "Меню напитков",
   "events": "События",
   "katsin_cards": "Кацин карты",
-  "book_vip_room": "Забронировать VIP-зал"
+  "book_vip_room": "Забронировать VIP-зал",
+  "raw starters": "НЕОБЫЧНЫЕ ПРЕДВАРИТЕЛЬНЫЕ ТЕСТЫ",
+  "sushi": "СУШИ, САШИМИ И НИГИРИ",
+  "salads": "САЛАТЫ",
+  "seafood": "МОРЕПРОДУКТЫ",
+  "mangal": "МАНГАЛ",
+  "other dishes on charcoal": "ДРУГИЕ БЛЮДА НА УГЛЯХ",
+  "steak on charcoal": "СТЕЙК НА УГЛЯХ",
+  "darkness": "Гарнир",
+  "sauces": "СОУСЫ",
+  "desserts": "DESSERT"
 }

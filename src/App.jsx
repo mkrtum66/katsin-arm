@@ -18,6 +18,7 @@ import AccessibilityPage from './pages/accessibilityPage';
 import VipRoomPage from './pages/vipRoomPage';
 import GiftCardPage from './pages/giftCardPage';
 import EventsPage from './pages/eventsPage';
+import LunchMenuPage from './pages/lunchMenuPage';
 
 function App() {
   const [showSideBar, setShowSideBar] = useState(false);
@@ -32,6 +33,7 @@ function App() {
         <Route path={'/'} element={<HomePage sideRef={sideRef} />} />
         <Route path={'/welcome'} element={<WelcomePage />} />
         <Route path={'/food-menu'} element={<FoodMenuPage />} />
+        <Route path={'/lunch-menu'} element={<LunchMenuPage />} />
         <Route path={'/drink-menu'} element={<DrinkMenuPage />} />
         <Route path={'/events'} element={<EventsPage />} />
 

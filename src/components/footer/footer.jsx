@@ -70,7 +70,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="website">
-                <a href="/">
+                <a href="https://katsin.netlify.app/">
                   <img src={www} alt="img" />
                   <p>www.katsinusa.com</p>
                 </a>
@@ -135,7 +135,7 @@ const Footer = () => {
                 </a>
               </div>
               <div className="website">
-                <a href="/">
+                <a href="https://katsin-arm.netlify.app/">
                   <img src={www} alt="img" />
                   <p>www.katsin.am</p>
                 </a>

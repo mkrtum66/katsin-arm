@@ -8,20 +8,22 @@
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    //justify-content: space-around;
     margin: 0;
+    overflow-x: auto;
     li{
-      padding: 8px;
+      padding: 8px 20px;
       color: var(--color-bras);
       text-shadow: 2px 2px 2px var(--color-red);
       font-weight: 700;
       cursor: pointer;
       transition: all .3s;
-      &:hover{
-        transform: scale(1.1);
-      }
+      min-width: fit-content;
+      //&:hover{
+      //  transform: scale(1.1);
+      //}
       @media (max-width: 768px){
-        padding: 8px 4px;
+        padding: 8px 16px;
         font-size: 14px;
       }
     }

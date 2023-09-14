@@ -33,6 +33,9 @@ const Sidebar = ({ showSideBar, setShowSideBar, setSideRef }) => {
             <NavLink to={'/food-menu'}>{t('food_menu')}</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
+            <NavLink to={'/lunch-menu'}>{t('lunch_menu')}</NavLink>
+          </li>
+          <li onClick={() => handleNavigate()}>
             <NavLink to={'/drink-menu'}>{t('drink_menu')}</NavLink>
           </li>
           <li onClick={() => clickOnLink('venue')}>

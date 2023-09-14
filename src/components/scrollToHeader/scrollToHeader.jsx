@@ -1,7 +1,10 @@
 import React from 'react';
 import './scrollToHeader.scss';
+import { useTranslation } from 'react-i18next';
 
 const ScrollToHeader = ({ links, setMyRef }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="scrollToHeader">
       <div className="container">
@@ -9,7 +12,7 @@ const ScrollToHeader = ({ links, setMyRef }) => {
           {links.map(item => {
             return (
               <li key={item.id} onClick={() => setMyRef(item.id)}>
-                {item.title.toUpperCase()}
+                {t(item.title).toUpperCase()}
               </li>
             );
           })}

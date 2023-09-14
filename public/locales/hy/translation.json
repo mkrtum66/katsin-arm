@@ -19,8 +19,19 @@
   "accessibility": "Մատչելիություն",
   "sd_welcome": "Բարի գալուստ",
   "food_menu": "Սննդի մենյու",
+  "lunch_menu": "Լանչ մենյու",
   "drink_menu": "Խմիչքների մենյու",
   "events": "Իրադարձություններ",
   "katsin_cards": "Կացին քարտեր",
-  "book_vip_room": "Ամրագրեք VIP սենյակ"
+  "book_vip_room": "Ամրագրեք VIP սենյակ",
+  "raw starters": "ՀՈՒՄ ՆԱԽՈԻՏԵՍՏՆԵՐ",
+  "sushi": "ՍՈՒՇԻ, ՍԱՇԻՄԻ ԵՎ ՆԻԳԻՐԻ",
+  "salads": "ԱՂՑԱՆՆԵՐ",
+  "seafood": "ԾՈՎԱՄԹԵՐՔ",
+  "mangal": "ՄԱՆՂԱԼ",
+  "other dishes on charcoal": "ԱՅԼ ՈՒՏԵՍՏՆԵՐ ԱԾՈՒԽԻ ՎՐԱ",
+  "steak on charcoal": "ՍԹԵՅՔ ԱԾՈՒԽԻ ՎՐԱ",
+  "darkness": "ԽԱՎԱՐՏՆԵՐ",
+  "sauces": "ՍՈՈՒՍՆԵՐ",
+  "desserts": "ԴԵՍԵՐՏ"
 }
