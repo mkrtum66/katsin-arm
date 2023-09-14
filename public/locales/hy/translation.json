@@ -1,6 +1,26 @@
 {
-  "address": "Ամիրյան 4, 6, Երևան 0010, Հայաստան",
+  "address": "Ամիրյան 4/6, Երևան 0010, Հայաստան",
   "book_now": "Ամրագրել",
   "katsin": "կացին",
-  "starters": "ՆԱԽՈԻՏԵՍՏՆԵՐ"
+  "starters": "ՆԱԽՈԻՏԵՍՏՆԵՐ",
+  "cuisine": "Խոհանոց",
+  "menu": "Մենյու",
+  "venue": "Վայրը",
+  "us_address" : "515 W Broadway Ave, Unit 111, Glendale, CA, 91204",
+  "us_working_days": "երկուշաբթի - կիրակի",
+  "arm_address" : "Ամիրյան 4/6, Երևան 0010, Հայաստան",
+  "arm_working_days": "երկուշաբթի - կիրակի",
+  "newsletters": "Տեղեկագրեր",
+  "email_address": "Էլեկտրոնային հասցե",
+  "subscribe": "Բաժանորդագրվել",
+  "jobs": "Աշխատանքներ",
+  "privacy_policy": "Գաղտնիության քաղաքականություն",
+  "terms_of_services": "Ծառայությունների մատուցման պայմաններ",
+  "accessibility": "Մատչելիություն",
+  "sd_welcome": "Բարի գալուստ",
+  "food_menu": "Սննդի մենյու",
+  "drink_menu": "Խմիչքների մենյու",
+  "events": "Իրադարձություններ",
+  "katsin_cards": "Կացին քարտեր",
+  "book_vip_room": "Ամրագրեք VIP սենյակ"
 }

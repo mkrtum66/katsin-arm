@@ -2,8 +2,11 @@ import React from 'react';
 import './sidebar.scss';
 import { NavLink } from 'react-router-dom';
 import { scrollToSection } from '../../utils/scrollToSection';
+import { useTranslation } from 'react-i18next';
 
 const Sidebar = ({ showSideBar, setShowSideBar, setSideRef }) => {
+  const { t } = useTranslation();
+
   const handleNavigate = () => {
     setShowSideBar(false);
     window.scrollTo({
@@ -24,28 +27,28 @@ const Sidebar = ({ showSideBar, setShowSideBar, setSideRef }) => {
       <div className="sidebar-content">
         <ul>
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/welcome'}>Welcome</NavLink>
+            <NavLink to={'/welcome'}>{t('sd_welcome')}</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/food-menu'}>Food Menu</NavLink>
+            <NavLink to={'/food-menu'}>{t('food_menu')}</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/drink-menu'}>Drink Menu</NavLink>
+            <NavLink to={'/drink-menu'}>{t('drink_menu')}</NavLink>
           </li>
           <li onClick={() => clickOnLink('venue')}>
-            <NavLink to={'/'}>Venue</NavLink>
+            <NavLink to={'/'}>{t('venue')}</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/events'}>Events</NavLink>
+            <NavLink to={'/events'}>{t('events')}</NavLink>
           </li>
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'https://pos.toasttab.com/'}>Katsin Cards</NavLink>
+            <NavLink to={'https://pos.toasttab.com/'}>{t('katsin_cards')}</NavLink>
           </li>
           {/*<li onClick={() => handleNavigate()}>*/}
           {/*  <NavLink to={'/'}>Dress Code</NavLink>*/}
           {/*</li>*/}
           <li onClick={() => handleNavigate()}>
-            <NavLink to={'/vip'}>Book VIP Room</NavLink>
+            <NavLink to={'/vip'}>{t('book_vip_room')}</NavLink>
           </li>
         </ul>
       </div>

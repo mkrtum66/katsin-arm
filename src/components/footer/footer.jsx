@@ -12,8 +12,10 @@ import armFlag from '../../assets/icons/arm-flag.png';
 import { Form } from 'react-bootstrap';
 import Button from '../button';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
   const [email, setEmail] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
   const handleSubmit = event => {
@@ -44,7 +46,7 @@ const Footer = () => {
               >
                 <div>
                   <img src={location} alt="img" />
-                  <span>515 W Broadway Ave, Unit 111, Glendale, CA, 91204</span>
+                  <span>{t('us_address')}</span>
                 </div>
               </a>
               <a href="tel:+18186393030" className="phone-link">
@@ -54,7 +56,7 @@ const Footer = () => {
               <div className="hours mb-3">
                 <div className="mb-3">
                   <img src={calendar} alt="img" />
-                  <p>Monday - Sunday</p>
+                  <p>{t('us_working_days')}</p>
                 </div>
                 <div>
                   <img src={clock} alt="img" />
@@ -79,18 +81,18 @@ const Footer = () => {
             <div className="logo-wrapper mb-4">
               <img src={logo} alt="logo" className="img-fluid" />
             </div>
-            <p className="title">Newslatters:</p>
+            <p className="title">{t('newsletters')}:</p>
             {!isSubmitted ? (
               <Form className="newsLatterForm" onSubmit={event => handleSubmit(event)}>
                 <Form.Group className="mb-3" controlId="newsletter">
                   <Form.Control
                     type="email"
-                    placeholder="Email Address"
+                    placeholder={t('email_address')}
                     value={email}
                     onChange={e => handleChange(e)}
                   />
                 </Form.Group>
-                <Button onClick={event => handleSubmit(event)}>Subscribe</Button>
+                <Button onClick={event => handleSubmit(event)}>{t('subscribe')}</Button>
               </Form>
             ) : (
               <div className="thank-you">Thank you for subscription</div>
@@ -109,7 +111,7 @@ const Footer = () => {
               >
                 <div>
                   <img src={location} alt="img" />
-                  <span>4/6 Amiryan Str., Yerevan, Armenia</span>
+                  <span>{t('arm_address')}</span>
                 </div>
               </a>
               <a href="tel:+37477881001" className="phone-link">
@@ -119,7 +121,7 @@ const Footer = () => {
               <div className="hours">
                 <div className="mb-3">
                   <img src={calendar} alt="img" />
-                  <p>Monday - Sunday</p>
+                  <p>{t('arm_working_days')}</p>
                 </div>
                 <div className="mb-3">
                   <img src={clock} alt="img" />
@@ -144,19 +146,19 @@ const Footer = () => {
         <div className="row mt-5">
           <ul className="footer-links">
             <li>
-              <NavLink to={'/jobs'}>Jobs</NavLink>
+              <NavLink to={'/jobs'}>{t('jobs')}</NavLink>
             </li>
             <span>|</span>
             <li>
-              <NavLink to={'/privacy-policy'}>Privacy Policy</NavLink>
+              <NavLink to={'/privacy-policy'}>{t('privacy_policy')}</NavLink>
             </li>
             <span>|</span>
             <li>
-              <NavLink to={'/terms-of-services'}>Terms of Services</NavLink>
+              <NavLink to={'/terms-of-services'}>{t('terms_of_services')}</NavLink>
             </li>
             <span>|</span>
             <li>
-              <NavLink to={'/accessibility'}>Accessibility</NavLink>
+              <NavLink to={'/accessibility'}>{t('accessibility')}</NavLink>
             </li>
           </ul>
         </div>

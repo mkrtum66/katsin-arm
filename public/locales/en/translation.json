@@ -1,6 +1,26 @@
 {
-  "address": "Amiryan 4, 6, Yerevan 0010, Armenia",
+  "address": "Amiryan 4/6, Yerevan 0010, Armenia",
   "book_now": "Book Now",
   "katsin": "katsin",
-  "starters": "Starters"
+  "starters": "Starters",
+  "cuisine": "Cuisine",
+  "menu": "Menu",
+  "venue": "Venue",
+  "us_address" : "515 W Broadway Ave, Unit 111, Glendale, CA, 91204",
+  "us_working_days": "Monday - Sunday",
+  "arm_address" : "4/6 Amiryan Str., Yerevan, Armenia",
+  "arm_working_days": "Monday - Sunday",
+  "newsletters": "Newsletters",
+  "email_address": "Email Address",
+  "subscribe": "Subscribe",
+  "jobs": "Jobs",
+  "privacy_policy": "Privacy Policy",
+  "terms_of_services": "Terms of Services",
+  "accessibility": "Accessibility",
+  "sd_welcome": "Welcome",
+  "food_menu": "Food Menu",
+  "drink_menu": "Drink Menu",
+  "events": "Events",
+  "katsin_cards": "Katsin Cards",
+  "book_vip_room": "Book VIP Room"
 }

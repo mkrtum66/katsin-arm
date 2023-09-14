@@ -31,9 +31,9 @@ const HomePage = ({ sideRef }) => {
       <section className="section2">
         <div className="container">
           <Slider
-            title={'Cuisine'}
+            title={t('cuisine')}
             data={cuisineSlider}
-            buttonValue="menu"
+            buttonValue={t('menu')}
             onClick={() => console.log('from Cuisine')}
           />
         </div>
@@ -49,10 +49,10 @@ const HomePage = ({ sideRef }) => {
       <section id="venue" className="sectionVanue">
         <div className="container">
           <Slider
-            title={'Venue'}
+            title={t('venue')}
             data={venueSlider}
-            buttonValue="Book a Table"
-            onClick={() => console.log('from Cuisine')}
+            buttonValue={t('book_now')}
+            onClick={() => console.log('from Vanue')}
           />
         </div>
       </section>
