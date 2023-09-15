@@ -11,8 +11,8 @@ import rusFlag from '../../assets/icons/rus-flag.svg';
 import armFlag from '../../assets/icons/arm-flag.png';
 import { useNavigate } from 'react-router';
 import { useTranslation } from 'react-i18next';
-import i18n from 'i18next';
 import { Dropdown } from 'react-bootstrap';
+import i18n from 'i18next';
 
 const Header = ({ showSideBar, setShowSideBar }) => {
   const [activeLng, setActiveLng] = useState(i18n.language);
